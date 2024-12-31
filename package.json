@@ -18,6 +18,8 @@
     "svelte": "^3.49.0"
   },
   "dependencies": {
-    "flot": "^4.2.6"
+    "flot": "^4.2.6",
+    "svelte-swipe": "^2.0.4",
+    "swiper": "^8.3.2"
   }
 }

@@ -3,6 +3,9 @@ import Layout from '../layouts/Layout.astro';
 import Countdown from '../components/Countdown.svelte';
 import Speakers from '../components/Speakers.svelte';
 import Chartbib from '../components/Chartbib.astro'
+import Selection from '../components/Selection.astro'
+import Leapcentres from '../components/Leapcentres.svelte'
+
 ---
 <Layout>
 
@@ -26,7 +29,7 @@ import Chartbib from '../components/Chartbib.astro'
                               <h2 class="banner-title md:text-6xl text-xl">Launch Empower Accelerate Prosper</h2>
                               <!-- <h4 class="text-3xl md:text-5xl font-bold text-white">Launch Empower Accelerate Prosper</h4> -->
                               <!-- <p class=" text-lg">The LEAP coworking space aims to create an environment that nurtures innovation, encourages networking, and facilitates the success of startups and entrepreneurs. Kerala Startup Mission (KSUM) has been at the forefront of supporting startups and entrepreneurs in Kerala through its incubation centers. We are transforming our incubation centers, partner incubation centers, and IEDC owned incubation centers into a vibrant coworking space called LEAP Coworks. LEAP, which stands for Launch Empower Accelerate Prosper, embodies our commitment to fostering innovation, collaboration, and success in the startup ecosystem.</p> -->
-                              <a href="#" class="button-primary">CONTINUE READING</a>
+                              <!-- <a href="#" class="button-primary">CONTINUE READING</a> -->
                            </div>
                         </div>
                      </div>
@@ -35,122 +38,45 @@ import Chartbib from '../components/Chartbib.astro'
              
             </div>
          </section>
-         <!-- slider html start -->
-         <!-- Home search field html start -->
+        
+
          <div class="trip-search-section shape-search-section">
             <div class="slider-shape"></div>
             <div class="container">
                <div class="trip-search-inner white-bg d-flex">
-                  <p class=" text-justify text-lg">
+                  <p class=" text-justify text-base">
                      The LEAP coworking space aims to create an environment that nurtures innovation, encourages networking, and facilitates the success of startups and entrepreneurs. Kerala Startup Mission (KSUM) has been at the forefront of supporting startups and entrepreneurs in Kerala through its incubation centers. We are transforming our incubation centers, partner incubation centers, and IEDC owned incubation centers into a vibrant coworking space called LEAP Coworks. LEAP, which stands for Launch Empower Accelerate Prosper, embodies our commitment to fostering innovation, collaboration, and success in the startup ecosystem.
                   </p>
-                  <p class=" text-justify pt-6 text-lg">
+                  <p class=" text-justify pt-6 text-base">
                      LEAP will offer well designed workspace, meeting rooms, high speed internet connectivity and other essential amenities  for a productive environment. While transitioning to a coworking model KSUM will continue to provide valuable incubation support service  to startups, Including mentorship programs, business development assistance, access to funding opportunities  and expert guidance. LEAP will foster a vibrant community of like-minded individuals and startups, creating opportunities for collaboration, knowledge sharing and networking. LEAP will become a single access point for entrepreneurs to enter the startup ecosystem.
                   </p>
                </div>
             </div>
          </div>
-         <!-- search search field html end -->
+      
 
-         <!-- <section class="package-section pt-24">
-            <div class="container">
-              
-               <div class="package-inner">
-                  <div class="row">
-                     <div class="col-lg-3 col-md-6">
-                        <div class="package-wrap">
-                           <figure class="feature-image">
-                              <a href="#">
-                                 <img src="/img/d1.webp" alt="">
-                              </a>
-                           </figure>
-                          
-                           <div class="package-content-wrap">
-                              <div class="package-meta text-center text-white font-bold text-2xl">
-                                 Explore LEAP Coworks
-                              </div>
-                              <div class="package-content">
-                               
-                                 <p class=" pb-12 text-justify">
-                                    Experience plug-and-play workstations, meeting rooms, and discussion spaces, all powered by high-speed internet and modern facilities.
-                                 </p>
-                                 
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-lg-3 col-md-6">
-                        <div class="package-wrap">
-                           <figure class="feature-image">
-                              <a href="#">
-                                 <img src="/img/d2.webp" alt="">
-
-                              </a>
-                           </figure>
-                          
-                           <div class="package-content-wrap">
-                              <div class="package-meta text-center text-white font-bold text-2xl">
-                                 Get LEAP Membership card
-                              </div>
-                              <div class="package-content">
-                               
-                                 <p class=" pb-4 text-justify">
-                                    LEAP provides workspaces, meeting rooms, and essential amenities to foster collaboration, networking, and growth in the startup ecosystem.                                 
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-lg-3 col-md-6">
-                        <div class="package-wrap">
-                           <figure class="feature-image">
-                              <a href="#">
-                                 <img src="/img/d3.webp" alt="">
-                              </a>
-                           </figure>
-                          
-                           <div class="package-content-wrap">
-                              <div class="package-meta text-center text-white font-bold text-2xl">
-                                 Facility Booking 
-                              </div>
-                              <div class="package-content">
-                               
-                                 <p class=" pb-4 text-justify">
-                                    LEAP Co Works provides common facilities like meeting rooms, conference halls, amphi theatre, event hall etc for the startups and associated communities.
-                                 </p>
-                                 
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </section> -->
-
-
-         <section class="package-section pt-24">
-            
+         <section class="package-section py-24">
             <div class="container">
                <div class="section-heading">
                   <div class="row align-items-end">
-                     <div class="col-lg-7">
+                     <div class="col-lg-6">
                         <h5 class="dash-style">WORKSPACES REIMAGINED</h5>
                         <h2>Explore LEAP Coworks</h2>
                      </div>
                      <div class="col-lg-5">
-                        <div class="section-disc text-lg text-justify">
+                        <div class="section-disc text-base text-justify">
                            Experience plug-and-play workstations, meeting rooms, and discussion spaces, all powered by high-speed internet and modern facilities.                        </div>
                      </div>
                   </div>
                </div>
-               <div class="career-detail-section">
+               <div class="career-detail-section pb-24">
                   <div class="career-detail-inner">
                      <div class="container">
-                        <div class="row">
-                           <div class="col-lg-8">
-                              <div class="job-description">
-                                 <figure class="job-imgage">
-                                    <img src="/img/cowork.png" alt="">
+                        <div class="">
+                           <div class="">
+                              <div class="">
+                                 <figure class="">
+                                    <img src="/img/img.png" class=" h-60 w-2/3" alt="">
                                  </figure>
                               </div>
                               <div class="tab-container">
@@ -168,7 +94,7 @@ import Chartbib from '../components/Chartbib.astro'
                                  <div class="tab-content" id="myTabContent">
                                     <div class="tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="overview-tab">
                                        <div class="overview-content">
-                                          <p class=" text-xl font-bold">Eligibility Criteria for KSUM Owned centres:</p>
+                                          <p class="text-base  font-semibold">Eligibility Criteria for KSUM Owned centres:</p>
                                           <div class="pl-10 pt-6">
                                              <ul class=" list-disc list-outside ">
                                                 <li class="font-semibold text-justify">Startups with a valid KSUM Unique ID </li>
@@ -188,7 +114,7 @@ import Chartbib from '../components/Chartbib.astro'
                                              <div class="">
                                                 <div>
                                                       <div class="overflow-x-auto">
-                                                         <table class="w-full border-collapse border border-gray-300 text-black text-sm">
+                                                         <table class="w-full border-collapse border border-gray-300 text-black">
                                                             <thead>
                                                               <tr class="bg-gray-100 text-black text-left">
                                                                 <th class="border border-gray-300 text-black px-3 py-2">Centers</th>
@@ -200,7 +126,7 @@ import Chartbib from '../components/Chartbib.astro'
                                                             </thead>
                                                             <tbody>
                                                               <tr class="hover:bg-gray-50">
-                                                                <td class="border border-gray-300 text-black px-3 py-2" rowspan="3">Thejaswini, CDAC, ISC Kochi<br>Govt Cyber park <span class="text-xs">(Kozhikode)</span>, <br> UL Cyber park <span class="text-xs">(Kozhikode)</span></td>
+                                                                <td class="border border-gray-300 text-black px-3 py-2" rowspan="3">Trivandrum<br>Kochi<br>Kozhikode</td>
                                                                 <td class="border border-gray-300 text-black px-3 py-2">Square feet wise</td>
                                                                 <td class="border border-gray-300 text-black px-3 py-2 ">Rs.100 Per sq.feet</td>
                                                                 <td class="border border-gray-300 text-black px-3 py-2 text-center">40%</td>
@@ -245,95 +171,22 @@ import Chartbib from '../components/Chartbib.astro'
                                                       </ul>
                                                    </div>
                                                 </div>
+                                                <div class="btn-wrap">
+                                                   <a href="https://startups.startupmission.in/application/incubation" target="_blank" class="button-primary uppercase">Apply Now</a>
+                                                </div>
                                              </div>
                                        </div>
                                     </div>
-                                    <!-- <div class="tab-pane" id="requirement" role="tabpanel" aria-labelledby="requirement-tab">
-                                       <div class="requirement-content">
-                                          <p>
-                                             Culpa cupidatat occaecat neque hic sollicitudin provident nascetur felis, sollicitudin nonummy class explicabo litora sed. Sapien, nobis consequatur consequatur eaque. Incidunt. Ex? Repellat voluptates dignissim! Aliquam velit natoque aspernatur maiores.
-                                          </p>
-                                          <ul>
-                                             <li>Nunc minima aspernatur dignissimos, sit adipiscing? Cupidatat cursus.</li>
-                                             <li>Netus donec justo mauris etiam velit.</li>
-                                             <li>Quis dolorum habitasse accusantium hic consequat.</li>
-                                             <li>Mus quasi aute non, at, saepe? Commodi sodales aliquam voluptatum.</li>
-                                             <li>Adipisicing ullamcorper dapibus, consequatur itaque eros orci odio.</li>
-                                          </ul>
-                                       </div>
-                                    </div> -->
+                                  
                                  </div>
                               </div>
                            </div>
-                           <div class="col-lg-4 order-lg-first">
-                              <div class="sidebar">
-                                 <div class="widget-bg sidebar-list">
-                                    <h4 class="bg-title text-xl font-bold">Facilities and amenities</h4>
-                                    <ul>
-                                       <li class=" text-lg"><i class="fas fa-minus"></i>Plug and play Workstations.</li>
-                                       <li class=" text-lg"><i class="fas fa-minus"></i>Meeting Rooms & Discussion Rooms.</li>
-                                       <li class=" text-lg"><i class="fas fa-minus"></i>High speed Internet.</li>
-                                    </ul>
-                                 </div>
-                                 <div class="widget-bg faq-widget">
-                                    <h4 class="bg-title text-xl font-bold">Selection process</h4>
-                                    <div class="accordion" id="accordionOne">
-                                       <div class="card">
-                                          <div class="card-header" id="headingOne">
-                                             <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                                <span class=" text-lg">
-                                                   Initial Screening
-                                                </span>
-                                             </button>
-                                          </div>
-                                          <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionOne">
-                                             <div class="card-body text-justify">
-                                                There will be an initial screening for the submitted application, the incomplete application will be rejected.
-                                             </div>
-                                          </div>
-                                       </div>
-                                       <div class="card">
-                                          <div class="card-header" id="headingTwo">
-                                             <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                                <span class=" text-lg">
-                                                   Final Pitching
-                                                </span>
-                                             </button>
-                                          </div>
-                                          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionOne">
-                                             <div class="card-body text-justify">
-                                                Final Pitch before the Expert Committee and the applicants will be selected based on the recommendations of the Expert Committee. Selected Applicants should submit all documents with KSUM as informed.
-                                             </div>
-                                          </div>
-                                       </div>
-                                       <div class="card">
-                                          <div class="card-header" id="headingThree">
-                                             <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                                <span class=" text-lg">
-                                                   Onboarding
-                                                </span>
-                                             </button>
-                                          </div>
-                                          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionOne">
-                                             <div class="card-body text-justify">
-                                                Based on recommendation by an expert committee further processing for onboarding is initiated by KSUM representatives.
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </div>  
-                                 </div>
-                                 <!-- <div class="widget-bg upload-widget text-center">
-                                    <div class="widget-icon">
-                                       <i class="fas fa-file-invoice"></i>
-                                    </div>
-                                    <h3>Send us your C.V.</h3>
-                                    <p>Do you want to work with us? Please, send your CV to <a href="#">domain123@gmail.com</a></p>
-                                    <span class="or-style">OR</span>
-                                    <a href="#" class="button-primary">CONTACT US</a>
-                                 </div> -->
-                              </div>
-                           </div>
+                          
                         </div>
+                        <div class="section-heading pt-10 pb-0 mb-0">
+                           <h5 class="dash-style uppercase">Selection process</h5>
+                        </div>
+                        <Selection></Selection>
                      </div>
                   </div>
                  
@@ -341,107 +194,11 @@ import Chartbib from '../components/Chartbib.astro'
             </div>
          </section>
 
-<!-- 
-         <div class="faq-page-section pt-20">
-            <div class="container">
-               
-               <div class="faq-page-container">
-                  <div class="flex lg:flex-row flex-col">
-                     <div class=" lg:w-1/3 w-full">
-                        <div class="faq-testimonial">
-                           <figure class="faq-image">
-                              <img src="/img/test.webp" alt="">
-                           </figure>
-                           <div class="testimonial-content">
-                            
-                              <p class=" text-lg ">
-                                 LEAP will offer well designed workspace, meeting rooms, high speed internet connectivity and other essential amenities  for a productive environment. Through LEAP membership KSUM aims to foster a vibrant community of like-minded individuals and startups, creating opportunities for collaboration, knowledge sharing and networking. LEAP will become a single access point for entrepreneurs to enter the startup ecosystem.
-                              </p>
-                           </div>
-                        </div>
-                     </div>
-                     <div class=" lg:w-2/3 w-full">
-                        <div class="faq-content-wrap pl-20">
-                           <div class="section-heading">
-                              <h5 class="dash-style">Unlock Opportunities with LEAP Membership</h5>
-                              <h2>Get LEAP Membership card?</h2>
-                           </div>
-                           <div class="accordion" id="accordionTwo">
-                              <div class="card">
-                                 <div class="card-header" id="headingOne">
-                                    <h4 class="mb-0">
-                                       <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                          Facilities and amenities
-                                       </button>
-                                    </h4>
-                                 </div>
-                                 <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionTwo">
-                                    <div class="card-body">
-                                          <ul class="list-outside">
-                                             <li class=" font-semibold pb-1"><span class=" font-semibold p-1 pr-2">&#128922;</span>Subsidized access to all LEAP center facilities</li>
-                                             <li class=" font-semibold pb-1"><span class=" font-semibold p-1 pr-2">&#128922;</span>Access to KSUM's partner incubation centers across the State</li>
-                                             <li class=" font-semibold pb-1"><span class=" font-semibold p-1 pr-2">&#128922;</span>Will get access to book Flexi Workstations</li>
-                                             <li class=" font-semibold pb-1"><span class=" font-semibold p-1 pr-2">&#128922;</span>Additional subsidies for KSUM partnering events</li>
-                                             <li class=" font-semibold pb-1"><span class=" font-semibold p-1 pr-2">&#128922;</span>Talent acquisition support</li>
-                                             <li class=" font-semibold pb-1"><span class=" font-semibold p-1 pr-2">&#128922;</span>Uninterrupted internet and electricity</li>
-                                             <li class=" font-semibold pb-1"><span class=" font-semibold p-1 pr-2">&#128922;</span>Internship drives and tech training</li>
-                                             <li class=" font-semibold pb-1"><span class=" font-semibold p-1 pr-2">&#128922;</span>5 days access to flexi seats free of cost at any facility every month</li>
-                                             <li class=" font-semibold pb-1"><span class=" font-semibold p-1 pr-2">&#128922;</span>One year validity for a membership card</li>
-                                             <li class=" font-semibold pb-1"><span class=" font-semibold p-1 pr-2">&#128922;</span>Access to Leap Centers across the country</li>
-                                             <li class=" font-semibold pb-1"><span class=" font-semibold p-1 pr-2">&#128922;</span>Access to Startup Infinity Centers across the world
-                                                </li>
-                                          </ul>
-                                    </div>
-                                 </div>
-                              </div>
-                              <div class="card">
-                                 <div class="card-header" id="headingTwo">
-                                    <h4 class="mb-0">
-                                       <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                          Eligibility criteria 
-                                       </button>
-                                    </h4>
-                                 </div>
-                                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionTwo">
-                                    <div class="card-body">
-                                       <ul class="list-outside">
-                                          <li class=" font-semibold pb-1"><span class=" font-semibold p-1 pr-2">&#128922;</span>Startups having KSUM unique id.</li>
-                                          <li class=" font-semibold pb-1"><span class=" font-semibold p-1 pr-2">&#128922;</span>Startups, entrepreneurs, and professionals looking to connect and collaborate with Kerala Startup Mission.</li>
-                                    </div>
-                                 </div>
-                              </div>
-                              <div class="card">
-                                 <div class="card-header" id="headingThree">
-                                    <h4 class="mb-0">
-                                       <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                          Required Documents for applicants other than Startups having KSUM unique id :
-                                       </button>
-                                    </h4>
-                                 </div>
-                                 <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionTwo">
-                                    <div class="card-body">
-                                       <ul class="list-outside">
-                                          <li class=" font-semibold pb-1"><span class=" font-semibold p-1 pr-2">&#128922;</span>Proof of identity (e.g., Aadhaar, PAN, or Passport).</li>
-                                          <li class=" font-semibold pb-1"><span class=" font-semibold p-1 pr-2">&#128922;</span>Relevant proof of startup, entrepreneurship, or professional affiliation.</li>
-
-                                    </div>
-                                 </div>
-                              </div>
-                              <div class="btn-wrap">
-                                 <a href="https://leap-portal.startupmission.in/login" target="_blank" class="button-primary uppercase">Apply Now</a>
-                              </div>
-                           </div>      
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div> -->
 
 
 
 
-         <div class="single-tour-section pt-24">
+         <div class="single-tour-section pt-32 pb-2">
             <div class="container">
                <div class="row">
                   <div class="col-lg-8">
@@ -452,78 +209,62 @@ import Chartbib from '../components/Chartbib.astro'
                         </div>
                         <div class="tab-container">
                            <ul class="nav nav-tabs" id="myTab" role="tablist">
-                              <!-- <li class="nav-item">
-                                 <a class="nav-link active" id="overview-tab" data-toggle="tab" href="#overview" role="tab" aria-controls="overview" aria-selected="true">DESCRIPTION</a>
-                              </li> -->
+                             
                               <li class="nav-item">
                                  <a class="nav-link active" id="program-tab" data-toggle="tab" href="#program" role="tab" aria-controls="program" aria-selected="true" >Facilities and amenities
                                  </a>
                               </li>
-                              <li class="nav-item">
-                                 <a class="nav-link" id="review-tab" data-toggle="tab" href="#review" role="tab" aria-controls="review" aria-selected="false">REVIEW</a>
-                              </li>
-                              <li class="nav-item">
-                                 <a class="nav-link" id="map-tab" data-toggle="tab" href="#map" role="tab" aria-controls="map" aria-selected="false">Map</a>
-                              </li>
+                            
                            </ul>
                            <div class="tab-content" id="myTabContent">
-                              <!-- <div class="tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="overview-tab">
-                                 <div class="overview-content">
-                                    <p>Occaecat pariatur! Quaerat ligula, ab, consequuntur orci mus ultricies praesent aute blandit beatae nisl aut, totam mauris rhoncus? Tellus netus fringilla class auctor dui. Dolores excepteur, doloribus, blanditiis aliquip nisl. Occaecat iusto? Provident sociis rerum. Amet, asperiores molestie varius eos! Libero, fermentum fermentum totam! Sunt praesentium, totam. Excepteur platea nisl. Convallis aliquam? Iaculis erat ipsa molestie, quod, vestibulum reiciendis, maxime nostra, integer unde officiis quo integer unde officiis quo.</p>
-                                    <p>Occaecat pariatur! Quaerat ligula, ab, consequuntur orci mus ultricies praesent aute blandit beatae nisl aut, totam mauris rhoncus? Tellus netus fringilla class auctor dui. Dolores excepteur, doloribus, blanditiis aliquip nisl..</p>
-                                    <ul>
-                                      <li>- Travel cancellation insurance</li> 
-                                      <li>- Breakfast and dinner included</li>
-                                      <li>- Health care included</li>
-                                      <li>- Transfer to the airport and return to the agency</li>
-                                      <li>- Lorem ipsum dolor sit amet, consectetur adipiscing</li>
-                                    </ul>
-                                 </div>
-                              </div> -->
+                             
                               <div class="tab-pane fade show active" id="program" role="tabpanel" aria-labelledby="program-tab">
                                 
                                  <div class="">
                                     <p class="text-base pb-4 font-semibold">
                                        LEAP membership is open to startups with a KSUM unique ID, as well as entrepreneurs and professionals looking to connect and collaborate with Kerala Startup Mission.
                                     </p>
-                                    <ul class="list-disc list-outside pl-6">
+                                    <ul class="list-disc list-outside pl-6 font-semibold">
                                        <li>
-                                          <h4>Subsidized access to all LEAP center facilities</h4>
+                                          Subsidized access to all LEAP center facilities
                                        </li>
                                        <li>
-                                          <h4>Access to KSUM's partner incubation centers across the State</h4>
+                                          Access to KSUM's partner incubation centers across the State
                                        </li>
                                        <li>
-                                          <h4>Will get access to book Flexi Workstations</h4>
+                                          Will get access to book Flexi Workstations
                                        </li>
                                        <li>
-                                          <h4>Additional subsidies for KSUM partnering events</h4>
+                                          Additional subsidies for KSUM partnering events
                                        </li>
                                        <li>
-                                          <h4>Talent acquisition support</h4>
+                                          Talent acquisition support
                                        </li>
                                        <li>
-                                          <h4>Uninterrupted internet and electricity</h4>
+                                          Uninterrupted internet and electricity
                                        </li>
                                        <li>
-                                          <h4>Internship drives and tech training</h4>
+                                          Internship drives and tech training
                                        </li>
                                        <li>
-                                          <h4>5 days access to flexi seats free of cost at any facility every month</h4>
+                                          5 days access to flexi seats free of cost at any facility every month
                                        </li>
                                        <li>
-                                          <h4>One year validity for a membership card</h4>
+                                          One year validity for a membership card
                                        </li>
                                        <li>
-                                          <h4>Access to Leap Centers across the country</h4>
+                                          Access to Leap Centers across the country
                                        </li>
                                        <li>
-                                          <h4>Access to Startup Infinity Centers across the world</h4>
+                                          Access to Startup Infinity Centers across the world
                                        </li>
                                     </ul>
+                                    <div class="btn-wrap">
+                                       <a href="https://leap-portal.startupmission.in/login" target="_blank" class="button-primary">Apply Now</a>
+                                    </div>
                                  </div>
                               </div>
-                              <div class="tab-pane" id="review" role="tabpanel" aria-labelledby="review-tab">
+                              <!-- <div class="tab-pane" id="review" role="tabpanel" aria-labelledby="review-tab">
                                  <div class="summary-review">
                                     <div class="review-score">
                                        <span>4.9</span>
@@ -536,7 +277,6 @@ import Chartbib from '../components/Chartbib.astro'
                                        <p>Tincidunt iaculis pede mus lobortis hendrerit eveniet impedit aenean mauris qui, pharetra rem doloremque laboris euismod deserunt non, cupiditate, vestibulum.</p>
                                     </div>
                                  </div>
-                                 <!-- review comment html -->
                                  <div class="comment-area">
                                     <h3 class="comment-title">3 Reviews</h3>
                                     <div class="comment-area-inner">
@@ -633,35 +373,35 @@ import Chartbib from '../components/Chartbib.astro'
                                        </form>
                                     </div>
                                  </div>
-                              </div>
-                              <div class="tab-pane" id="map" role="tabpanel" aria-labelledby="map-tab">
+                              </div> -->
+                              <!-- <div class="tab-pane" id="map" role="tabpanel" aria-labelledby="map-tab">
                                  <div class="map-area">
                                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60998820.06503915!2d95.3386452160086!3d-21.069765827214972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2b2bfd076787c5df%3A0x538267a1955b1352!2sAustralia!5e0!3m2!1sen!2snp!4v1579777829477!5m2!1sen!2snp" height="450" allowfullscreen=""></iframe>
                                  </div>
-                              </div>
+                              </div> -->
                            </div>
                         </div>
                         <div class="single-tour-gallery">
-                           <h3>GALLERY / PHOTOS</h3>
+                           <!-- <h3>GALLERY / PHOTOS</h3> -->
                            <div class="single-tour-slider">
                               <div class="single-tour-item">
                                  <figure class="feature-image">
-                                    <img src="assets/images/img28.jpg" alt="">
+                                    <img src="/img/1.png" alt="">
                                  </figure>
                               </div>
                               <div class="single-tour-item">
                                  <figure class="feature-image">
-                                    <img src="assets/images/img29.jpg" alt="">
+                                    <img src="/img/2.png" alt="">
                                  </figure>
                               </div>
                               <div class="single-tour-item">
                                  <figure class="feature-image">
-                                    <img src="assets/images/img32.jpg" alt="">
+                                    <img src="/img/3.png" alt="">
                                  </figure>
                               </div>
                               <div class="single-tour-item">
                                  <figure class="feature-image">
-                                    <img src="assets/images/img33.jpg" alt="">
+                                    <img src="/img/4.png" alt="">
                                  </figure>
                               </div>
                            </div>
@@ -670,8 +410,8 @@ import Chartbib from '../components/Chartbib.astro'
                   </div>
                   <div class="col-lg-4">
                      <div class="sidebar">
-                        <div class="travel-package-content text-center" style="background-image: url(assets/images/img11.jpg);">
-                           <!-- <h5>MORE PACKAGES</h5> -->
+                        <div class="travel-package-content text-center py-24" style="background-image: url(/img/55.png);">
+                           <h5 class="pt-10"></h5>
                            <h3 class="text-justify"></h3>
                            <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus.</p>
                            <ul>
@@ -690,7 +430,7 @@ import Chartbib from '../components/Chartbib.astro'
                            </ul> -->
                         </div>
                         <div class="package-price">
-                           <h5 class="price text-lg">
+                           <h5 class="price text-base">
                               LEAP will offer well designed workspace, meeting rooms, high speed internet connectivity and other essential amenities  for a productive environment. Through LEAP membership KSUM aims to foster a vibrant community of like-minded individuals and startups, creating opportunities for collaboration, knowledge sharing and networking. LEAP will become a single access point for entrepreneurs to enter the startup ecosystem.
                            </h5>
                           
@@ -707,7 +447,7 @@ import Chartbib from '../components/Chartbib.astro'
                               </li>
                            </ul>
                          
-                           <p class="text-lg text-start pb-3 font-semibold">
+                           <p class="text-base text-start pb-3 font-semibold">
                               Required Documents for applicants other than Startups having KSUM unique id    
                            </p>
                            <ul class=" list-disc list-outside">
@@ -723,506 +463,92 @@ import Chartbib from '../components/Chartbib.astro'
                </div>
             </div>
          </div>
-
-         <section class="package-section">
+         <div class="package-section pt-2 ">
             <div class="container">
-               <div class="section-heading text-center">
-                  <div class="row">
-                     <div class="col-lg-8 offset-lg-2">
-                        <h5 class="dash-style">EXPLORE GREAT PLACES</h5>
-                        <h2>POPULAR PACKAGES</h2>
-                        <p>Mollit voluptatem perspiciatis convallis elementum corporis quo veritatis aliquid blandit, blandit torquent, odit placeat. Adipiscing repudiandae eius cursus? Nostrum magnis maxime curae placeat.</p>
-                     </div>
-                  </div>
-               </div>
                <div class="package-inner">
                   <div class="row">
-                     <div class="col-lg-3 col-md-6">
+                     <div class="col-lg-6 col-md-6">
                         <div class="package-wrap">
                            <figure class="feature-image">
                               <a href="#">
-                                 <img src="assets/images/img5.jpg" alt="">
+                                 <img src="/img/platinumcard.jpeg" alt="">
                               </a>
                            </figure>
                            <div class="package-price">
                               <h6>
-                                 <span>$1,900 </span> / per person
+                                 <span>
+                                    4999 pack (Platinum)
+                                 </span>
                               </h6>
                            </div>
-                           <div class="package-content-wrap">
+                           <div class="package-content-wrap pb-2">
                               <div class="package-meta text-center">
-                                 <ul>
-                                    <li>
-                                       <i class="far fa-clock"></i>
-                                       7D/6N
-                                    </li>
-                                    <li>
-                                       <i class="fas fa-user-friends"></i>
-                                       People: 5
-                                    </li>
-                                    <li>
-                                       <i class="fas fa-map-marker-alt"></i>
-                                       Malaysia
-                                    </li>
-                                 </ul>
-                              </div>
-                              <div class="package-content">
-                                 <h3>
-                                    <a href="#">Sunset view of beautiful lakeside resident</a>
-                                 </h3>
-                                 <div class="review-area">
-                                    <span class="review-text">(25 reviews)</span>
-                                    <div class="rating-start" title="Rated 5 out of 5">
-                                       <span style="width: 60%"></span>
-                                    </div>
+                                 <div class="text-white text-lg">
+                                    Access to leap centers across the country - Owned by KSUM
                                  </div>
-                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit luctus nec ullam. Ut elit tellus, luctus nec ullam elit tellpus.</p>
-                                 <div class="btn-wrap">
-                                    <a href="#" class="button-text width-6">Book Now<i class="fas fa-arrow-right"></i></a>
-                                    <a href="#" class="button-text width-6">Wish List<i class="far fa-heart"></i></a>
+                              </div>
+                              <div class="package-content pb-6">
+                                 <div style="max-width: 600px; margin: 20px auto;  #ddd; border-radius: 8px; overflow: hidden;" class="mb-">
+                                    <div style="display: flex; border-bottom: 1px solid #ddd;">
+                                      <div style="flex: 1; padding: 10px; text-align: left;">Flexi Seats Booking</div>
+                                      <div style="flex: 2; padding: 10px; text-align: left;">2 times free in a month. After that, Rs. 400 per seat per day.</div>
+                                    </div>
+                                    <div style="display: flex; border-bottom: 1px solid #ddd;">
+                                      <div style="flex: 1; padding: 10px; text-align: left;">Flexi Seats Additional Seat Booking</div>
+                                      <div style="flex: 2; padding: 10px; text-align: left;">Up to 2 additional seats get a 40% subsidy, priced at Rs. 240 per seat per day.</div>
+                                    </div>
+                                    <div style="display: flex; border-bottom: 1px solid #ddd;">
+                                      <div style="flex: 1; padding: 10px; text-align: left;">Meeting Room</div>
+                                      <div style="flex: 2; padding: 10px; text-align: left;">1 time free in a month. After that, a 25% subsidy on additional bookings applies.</div>
+                                    </div>
+                                    <div style="display: flex; border-bottom: 1px solid #ddd;">
+                                       <div style="flex: 1; padding: 10px; text-align: left;">Validity</div>
+                                       <div style="flex: 2; padding: 10px; text-align: left;">12 Months</div>
+                                     </div>
                                  </div>
                               </div>
                            </div>
                         </div>
                      </div>
-                     <div class="col-lg-3 col-md-6">
+                     <div class="col-lg-6 col-md-6">
                         <div class="package-wrap">
                            <figure class="feature-image">
                               <a href="#">
-                                 <img src="assets/images/img6.jpg" alt="">
+                                 <img src="/img/platinumcard.jpeg" alt="">
                               </a>
                            </figure>
                            <div class="package-price">
                               <h6>
-                                 <span>$1,230 </span> / per person
+                                 <span>
+                                    4999 pack (Platinum)
+                                 </span>
                               </h6>
                            </div>
-                           <div class="package-content-wrap">
+                           <div class="package-content-wrap pb-2">
                               <div class="package-meta text-center">
-                                 <ul>
-                                    <li>
-                                       <i class="far fa-clock"></i>
-                                       5D/4N
-                                    </li>
-                                    <li>
-                                       <i class="fas fa-user-friends"></i>
-                                       People: 8
-                                    </li>
-                                    <li>
-                                       <i class="fas fa-map-marker-alt"></i>
-                                       Canada
-                                    </li>
-                                 </ul>
+                                 <div class="text-white text-lg">
+                                    Access to leap centers across the country - Owned by KSUM
+                                 </div>
                               </div>
-                              <div class="package-content">
-                                 <h3>
-                                    <a href="#">Experience the natural beauty of island</a>
-                                 </h3>
-                                 <div class="review-area">
-                                    <span class="review-text">(17 reviews)</span>
-                                    <div class="rating-start" title="Rated 5 out of 5">
-                                       <span style="width: 100%"></span>
+                              <div class="package-content pb-6">
+                                 <div style="max-width: 600px; margin: 20px auto; #ddd; border-radius: 8px; overflow: hidden;" class="mb-">
+                                    <div style="display: flex; border-bottom: 1px solid #ddd;">
+                                      <div style="flex: 1; padding: 10px; text-align: left;">Flexi Seats Booking</div>
+                                      <div style="flex: 2; padding: 10px; text-align: left;">2 times free in a month. After that, Rs. 400 per seat per day.</div>
                                     </div>
-                                 </div>
-                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit luctus nec ullam. Ut elit tellus, luctus nec ullam elit tellpus.</p>
-                                 <div class="btn-wrap">
-                                    <a href="#" class="button-text width-6">Book Now<i class="fas fa-arrow-right"></i></a>
-                                    <a href="#" class="button-text width-6">Wish List<i class="far fa-heart"></i></a>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-lg-3 col-md-6">
-                        <div class="package-wrap">
-                           <figure class="feature-image">
-                              <a href="#">
-                                 <img src="assets/images/img7.jpg" alt="">
-                              </a>
-                           </figure>
-                           <div class="package-price">
-                              <h6>
-                                 <span>$2,000 </span> / per person
-                              </h6>
-                           </div>
-                           <div class="package-content-wrap">
-                              <div class="package-meta text-center">
-                                 <ul>
-                                    <li>
-                                       <i class="far fa-clock"></i>
-                                       6D/5N
-                                    </li>
-                                    <li>
-                                       <i class="fas fa-user-friends"></i>
-                                       People: 6
-                                    </li>
-                                    <li>
-                                       <i class="fas fa-map-marker-alt"></i>
-                                       Portugal
-                                    </li>
-                                 </ul>
-                              </div>
-                              <div class="package-content">
-                                 <h3>
-                                    <a href="#">Vacation to the water city of Portugal</a>
-                                 </h3>
-                                 <div class="review-area">
-                                    <span class="review-text">(22 reviews)</span>
-                                    <div class="rating-start" title="Rated 5 out of 5">
-                                       <span style="width: 80%"></span>
+                                    <div style="display: flex; border-bottom: 1px solid #ddd;">
+                                      <div style="flex: 1; padding: 10px; text-align: left;">Flexi Seats Additional Seat Booking</div>
+                                      <div style="flex: 2; padding: 10px; text-align: left;">Up to 2 additional seats get a 40% subsidy, priced at Rs. 240 per seat per day.</div>
                                     </div>
-                                 </div>
-                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit luctus nec ullam. Ut elit tellus, luctus nec ullam elit tellpus.</p>
-                                 <div class="btn-wrap">
-                                    <a href="#" class="button-text width-6">Book Now<i class="fas fa-arrow-right"></i></a>
-                                    <a href="#" class="button-text width-6">Wish List<i class="far fa-heart"></i></a>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-lg-3 col-md-6">
-                        <div class="package-wrap">
-                           <figure class="feature-image">
-                              <a href="#">
-                                 <img src="assets/images/img7.jpg" alt="">
-                              </a>
-                           </figure>
-                           <div class="package-price">
-                              <h6>
-                                 <span>$2,000 </span> / per person
-                              </h6>
-                           </div>
-                           <div class="package-content-wrap">
-                              <div class="package-meta text-center">
-                                 <ul>
-                                    <li>
-                                       <i class="far fa-clock"></i>
-                                       6D/5N
-                                    </li>
-                                    <li>
-                                       <i class="fas fa-user-friends"></i>
-                                       People: 6
-                                    </li>
-                                    <li>
-                                       <i class="fas fa-map-marker-alt"></i>
-                                       Portugal
-                                    </li>
-                                 </ul>
-                              </div>
-                              <div class="package-content">
-                                 <h3>
-                                    <a href="#">Vacation to the water city of Portugal</a>
-                                 </h3>
-                                 <div class="review-area">
-                                    <span class="review-text">(22 reviews)</span>
-                                    <div class="rating-start" title="Rated 5 out of 5">
-                                       <span style="width: 80%"></span>
+                                    <div style="display: flex; border-bottom: 1px solid #ddd;">
+                                      <div style="flex: 1; padding: 10px; text-align: left;">Meeting Room</div>
+                                      <div style="flex: 2; padding: 10px; text-align: left;">1 time free in a month. After that, a 25% subsidy on additional bookings applies.</div>
                                     </div>
+                                    <div style="display: flex; border-bottom: 1px solid #ddd;">
+                                       <div style="flex: 1; padding: 10px; text-align: left;">Validity</div>
+                                       <div style="flex: 2; padding: 10px; text-align: left;">12 Months</div>
+                                     </div>
                                  </div>
-                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit luctus nec ullam. Ut elit tellus, luctus nec ullam elit tellpus.</p>
-                                 <div class="btn-wrap">
-                                    <a href="#" class="button-text width-6">Book Now<i class="fas fa-arrow-right"></i></a>
-                                    <a href="#" class="button-text width-6">Wish List<i class="far fa-heart"></i></a>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="btn-wrap text-center">
-                     <a href="#" class="button-primary">VIEW ALL PACKAGES</a>
-                  </div>
-               </div>
-            </div>
-         </section>
-         <!-- packages html end -->
-         <!-- Home callback section html start -->
-         <section class="callback-section">
-            <div class="container">
-               <div class="row no-gutters align-items-center">
-                  <div class="col-lg-5">
-                     <div class="callback-img" style="background-image: url(assets/images/img8.jpg);">
-                        <div class="video-button">
-                           <a id="video-container" data-video-id="IUN664s7N-c">
-                              <i class="fas fa-play"></i>
-                           </a>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-lg-7">
-                     <div class="callback-inner">
-                        <div class="section-heading section-heading-white">
-                           <h5 class="dash-style">CALLBACK FOR MORE</h5>
-                           <h2>GO TRAVEL. DISCOVER. REMEMBER US!!</h2>
-                           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Eaque adipiscing, luctus eleifend.</p>
-                        </div>
-                        <div class="callback-counter-wrap">
-                           <div class="counter-item">
-                              <div class="counter-icon">
-                                <img src="assets/images/icon1.png" alt="">
-                              </div>
-                              <div class="counter-content">
-                                 <span class="counter-no">
-                                    <span class="counter">500</span>K+
-                                 </span>
-                                 <span class="counter-text">
-                                    Satisfied Clients
-                                 </span>
-                              </div>
-                           </div>
-                           <div class="counter-item">
-                              <div class="counter-icon">
-                                <img src="assets/images/icon2.png" alt="">
-                              </div>
-                              <div class="counter-content">
-                                 <span class="counter-no">
-                                    <span class="counter">250</span>K+
-                                 </span>
-                                 <span class="counter-text">
-                                    Satisfied Clients
-                                 </span>
-                              </div>
-                           </div>
-                           <div class="counter-item">
-                              <div class="counter-icon">
-                                <img src="assets/images/icon3.png" alt="">
-                              </div>
-                              <div class="counter-content">
-                                 <span class="counter-no">
-                                    <span class="counter">15</span>K+
-                                 </span>
-                                 <span class="counter-text">
-                                    Satisfied Clients
-                                 </span>
-                              </div>
-                           </div>
-                           <div class="counter-item">
-                              <div class="counter-icon">
-                                <img src="assets/images/icon4.png" alt="">
-                              </div>
-                              <div class="counter-content">
-                                 <span class="counter-no">
-                                    <span class="counter">10</span>K+
-                                 </span>
-                                 <span class="counter-text">
-                                    Satisfied Clients
-                                 </span>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="support-area">
-                           <div class="support-icon">
-                              <img src="assets/images/icon5.png" alt="">
-                           </div>
-                           <div class="support-content">
-                              <h4>Our 24/7 Emergency Phone Services</h4>
-                              <h3>
-                                 <a href="#">Call: 123-456-7890</a>
-                              </h3>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </section>
-         <!-- callback html end -->
-         <!-- Home activity section html start -->
-         <section class="activity-section">
-            <div class="container">
-               <div class="section-heading text-center">
-                  <div class="row">
-                     <div class="col-lg-8 offset-lg-2">
-                        <h5 class="dash-style">TRAVEL BY ACTIVITY</h5>
-                        <h2>ADVENTURE & ACTIVITY</h2>
-                        <p>Mollit voluptatem perspiciatis convallis elementum corporis quo veritatis aliquid blandit, blandit torquent, odit placeat. Adipiscing repudiandae eius cursus? Nostrum magnis maxime curae placeat.</p>
-                     </div>
-                  </div>
-               </div>
-               <div class="activity-inner row">
-                  <div class="col-lg-2 col-md-4 col-sm-6">
-                     <div class="activity-item">
-                        <div class="activity-icon">
-                           <a href="#">
-                              <img src="assets/images/icon6.png" alt="">
-                           </a>
-                        </div>
-                        <div class="activity-content">
-                           <h4>
-                              <a href="#">Adventure</a>
-                           </h4>
-                           <p>15 Destination</p>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-lg-2 col-md-4 col-sm-6">
-                     <div class="activity-item">
-                        <div class="activity-icon">
-                           <a href="#">
-                              <img src="assets/images/icon10.png" alt="">
-                           </a>
-                        </div>
-                        <div class="activity-content">
-                           <h4>
-                              <a href="#">Trekking</a>
-                           </h4>
-                           <p>12 Destination</p>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-lg-2 col-md-4 col-sm-6">
-                     <div class="activity-item">
-                        <div class="activity-icon">
-                           <a href="#">
-                              <img src="assets/images/icon9.png" alt="">
-                           </a>
-                        </div>
-                        <div class="activity-content">
-                           <h4>
-                              <a href="#">Camp Fire</a>
-                           </h4>
-                           <p>7 Destination</p>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-lg-2 col-md-4 col-sm-6">
-                     <div class="activity-item">
-                        <div class="activity-icon">
-                           <a href="#">
-                              <img src="assets/images/icon8.png" alt="">
-                           </a>
-                        </div>
-                        <div class="activity-content">
-                           <h4>
-                              <a href="#">Off Road</a>
-                           </h4>
-                           <p>15 Destination</p>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-lg-2 col-md-4 col-sm-6">
-                     <div class="activity-item">
-                        <div class="activity-icon">
-                           <a href="#">
-                              <img src="assets/images/icon7.png" alt="">
-                           </a>
-                        </div>
-                        <div class="activity-content">
-                           <h4>
-                              <a href="#">Camping</a>
-                           </h4>
-                           <p>13 Destination</p>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-lg-2 col-md-4 col-sm-6">
-                     <div class="activity-item">
-                        <div class="activity-icon">
-                           <a href="#">
-                              <img src="assets/images/icon11.png" alt="">
-                           </a>
-                        </div>
-                        <div class="activity-content">
-                           <h4>
-                              <a href="#">Exploring</a>
-                           </h4>
-                           <p>25 Destination</p>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </section>
-         <!-- activity html end -->
-         <!-- Home special section html start -->
-         <section class="special-section">
-            <div class="container">
-               <div class="section-heading text-center">
-                  <div class="row">
-                     <div class="col-lg-8 offset-lg-2">
-                        <h5 class="dash-style">TRAVEL OFFER & DISCOUNT</h5>
-                        <h2>SPECIAL TRAVEL OFFER</h2>
-                        <p>Mollit voluptatem perspiciatis convallis elementum corporis quo veritatis aliquid blandit, blandit torquent, odit placeat. Adipiscing repudiandae eius cursus? Nostrum magnis maxime curae placeat.</p>
-                     </div>
-                  </div>
-               </div>
-               <div class="special-inner">
-                  <div class="row">
-                     <div class="col-md-6 col-lg-4">
-                        <div class="special-item">
-                           <figure class="special-img">
-                              <img src="assets/images/img9.jpg" alt="">
-                           </figure>
-                           <div class="badge-dis">
-                              <span>
-                                 <strong>20%</strong>
-                                 off
-                              </span>
-                           </div>
-                           <div class="special-content">
-                              <div class="meta-cat">
-                                 <a href="#">CANADA</a>
-                              </div>
-                              <h3>
-                                 <a href="#">Experience the natural beauty of glacier</a>
-                              </h3>
-                              <div class="package-price">
-                                 Price:
-                                 <del>$1500</del>
-                                 <ins>$1200</ins>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-md-6 col-lg-4">
-                        <div class="special-item">
-                           <figure class="special-img">
-                              <img src="assets/images/img10.jpg" alt="">
-                           </figure>
-                           <div class="badge-dis">
-                              <span>
-                                 <strong>15%</strong>
-                                 off
-                              </span>
-                           </div>
-                           <div class="special-content">
-                              <div class="meta-cat">
-                                 <a href="#">NEW ZEALAND</a>
-                              </div>
-                              <h3>
-                                 <a href="#">Trekking to the mountain camp site</a>
-                              </h3>
-                              <div class="package-price">
-                                 Price:
-                                 <del>$1300</del>
-                                 <ins>$1105</ins>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-md-6 col-lg-4">
-                        <div class="special-item">
-                           <figure class="special-img">
-                              <img src="assets/images/img11.jpg" alt="">
-                           </figure>
-                           <div class="badge-dis">
-                              <span>
-                                 <strong>15%</strong>
-                                 off
-                              </span>
-                           </div>
-                           <div class="special-content">
-                              <div class="meta-cat">
-                                 <a href="#">MALAYSIA</a>
-                              </div>
-                              <h3>
-                                 <a href="#">Sunset view of beautiful lakeside city</a>
-                              </h3>
-                              <div class="package-price">
-                                 Price:
-                                 <del>$1800</del>
-                                 <ins>$1476</ins>
                               </div>
                            </div>
                         </div>
@@ -1230,326 +556,34 @@ import Chartbib from '../components/Chartbib.astro'
                   </div>
                </div>
             </div>
-         </section>
-         <!-- special html end -->
-         <!-- Home special section html start -->
-         <section class="best-section">
-            <div class="container">
-               <div class="row">
-                  <div class="col-lg-5">
-                     <div class="section-heading">
-                        <h5 class="dash-style">OUR TOUR GALLERY</h5>
-                        <h2>BEST TRAVELER'S SHARED PHOTOS</h2>
-                        <p>Aperiam sociosqu urna praesent, tristique, corrupti condimentum asperiores platea ipsum ad arcu. Nostrud. Esse? Aut nostrum, ornare quas provident laoreet nesciunt odio voluptates etiam, omnis.</p>
-                     </div>
-                     <figure class="gallery-img">
-                        <img src="assets/images/img12.jpg" alt="">
-                     </figure>
-                  </div>
-                  <div class="col-lg-7">
-                     <div class="row">
-                        <div class="col-sm-6">
-                           <figure class="gallery-img">
-                              <img src="assets/images/img13.jpg" alt="">
-                           </figure>
-                        </div>
-                        <div class="col-sm-6">
-                           <figure class="gallery-img">
-                              <img src="assets/images/img14.jpg" alt="">
-                           </figure>
-                        </div>
-                     </div>
-                     <div class="row">
-                        <div class="col-12">
-                           <figure class="gallery-img">
-                              <img src="assets/images/img15.jpg" alt="">
-                           </figure>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </section>
-         <!-- best html end -->
-         <!-- Home client section html start -->
-         <div class="client-section">
-            <div class="container">
-               <div class="client-wrap client-slider secondary-bg">
-                  <div class="client-item">
-                     <figure>
-                        <img src="assets/images/logo1.png" alt="">
-                     </figure>
-                  </div>
-                  <div class="client-item">
-                     <figure>
-                        <img src="assets/images/logo2.png" alt="">
-                     </figure>
-                  </div>
-                  <div class="client-item">
-                     <figure>
-                        <img src="assets/images/logo3.png" alt="">
-                     </figure>
-                  </div>
-                  <div class="client-item">
-                     <figure>
-                        <img src="assets/images/logo4.png" alt="">
-                     </figure>
-                  </div>
-                  <div class="client-item">
-                     <figure>
-                        <img src="assets/images/logo5.png" alt="">
-                     </figure>
-                  </div>
-                  <div class="client-item">
-                     <figure>
-                        <img src="assets/images/logo2.png" alt="">
-                     </figure>
-                  </div>
-               </div>
+            <div class="btn-wrap container">
+               <a href="https://leap-portal.startupmission.in/login" target="_blank" class="button-primary">Apply Now</a>
             </div>
          </div>
-         <!-- client html end -->
-         <!-- Home subscribe section html start -->
-         <section class="subscribe-section" style="background-image: url(assets/images/img16.jpg);">
-            <div class="container">
-               <div class="row">
-                  <div class="col-lg-7">
-                     <div class="section-heading section-heading-white">
-                        <h5 class="dash-style">HOLIDAY PACKAGE OFFER</h5>
-                        <h2>HOLIDAY SPECIAL 25% OFF !</h2>
-                        <h4>Sign up now to recieve hot special offers and information about the best tour packages, updates and discounts !!</h4>
-                        <div class="newsletter-form">
-                           <form>
-                              <input type="email" name="s" placeholder="Your Email Address">
-                              <input type="submit" name="signup" value="SIGN UP NOW!">
-                           </form>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Eaque adipiscing, luctus eleifend temporibus occaecat luctus eleifend tempo ribus.</p>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </section>
-         <!-- subscribe html end -->
-         <!-- Home blog section html start -->
+
+     
+
          <section class="blog-section">
             <div class="container">
                <div class="section-heading text-center">
                   <div class="row">
                      <div class="col-lg-8 offset-lg-2">
-                        <h5 class="dash-style">FROM OUR BLOG</h5>
-                        <h2>OUR RECENT POSTS</h2>
-                        <p>Mollit voluptatem perspiciatis convallis elementum corporis quo veritatis aliquid blandit, blandit torquent, odit placeat. Adipiscing repudiandae eius cursus? Nostrum magnis maxime curae placeat.</p>
+                        <!-- <h5 class="dash-style">FROM OUR BLOG</h5> -->
+                        <h4 class=" md:text-3xl text-xl font-bold uppercase">LEAP Centres</h4>
+                        <!-- <p>Mollit voluptatem perspiciatis convallis elementum corporis quo veritatis aliquid blandit, blandit torquent, odit placeat. Adipiscing repudiandae eius cursus? Nostrum magnis maxime curae placeat.</p> -->
                      </div>
                   </div>
                </div>
-               <div class="row">
-                  <div class="col-md-6 col-lg-4">
-                     <article class="post">
-                        <figure class="feature-image">
-                           <a href="#">
-                              <img src="assets/images/img17.jpg" alt="">
-                           </a>
-                        </figure>
-                        <div class="entry-content">
-                           <h3>
-                              <a href="#">Life is a beautiful journey not a destination</a>
-                           </h3>
-                           <div class="entry-meta">
-                              <span class="byline">
-                                 <a href="#">Demoteam</a>
-                              </span>
-                              <span class="posted-on">
-                                 <a href="#">August 17, 2021</a>
-                              </span>
-                              <span class="comments-link">
-                                 <a href="#">No Comments</a>
-                              </span>
-                           </div>
-                        </div>
-                     </article>
-                  </div>
-                  <div class="col-md-6 col-lg-4">
-                     <article class="post">
-                        <figure class="feature-image">
-                           <a href="#">
-                              <img src="assets/images/img18.jpg" alt="">
-                           </a>
-                        </figure>
-                        <div class="entry-content">
-                           <h3>
-                              <a href="#">Take only memories, leave only footprints</a>
-                           </h3>
-                           <div class="entry-meta">
-                              <span class="byline">
-                                 <a href="#">Demoteam</a>
-                              </span>
-                              <span class="posted-on">
-                                 <a href="#">August 17, 2021</a>
-                              </span>
-                              <span class="comments-link">
-                                 <a href="#">No Comments</a>
-                              </span>
-                           </div>
-                        </div>
-                     </article>
-                  </div>
-                  <div class="col-md-6 col-lg-4">
-                     <article class="post">
-                        <figure class="feature-image">
-                           <a href="#">
-                              <img src="assets/images/img19.jpg" alt="">
-                           </a>
-                        </figure>
-                        <div class="entry-content">
-                           <h3>
-                              <a href="#">Journeys are best measured in new friends</a>
-                           </h3>
-                           <div class="entry-meta">
-                              <span class="byline">
-                                 <a href="#">Demoteam</a>
-                              </span>
-                              <span class="posted-on">
-                                 <a href="#">August 17, 2021</a>
-                              </span>
-                              <span class="comments-link">
-                                 <a href="#">No Comments</a>
-                              </span>
-                           </div>
-                        </div>
-                     </article>
-                  </div>
+
+                  <Leapcentres client:load></Leapcentres>
                </div>
-            </div>
-         </section>
-          <!-- blog html end -->
-          <!-- Home testimonial section html start -->
-         <div class="testimonial-section" style="background-image: url(assets/images/img23.jpg);">
-            <div class="container">
-               <div class="row">
-                  <div class="col-lg-10 offset-lg-1">
-                     <div class="testimonial-inner testimonial-slider">
-                        <div class="testimonial-item text-center">
-                           <figure class="testimonial-img">
-                              <img src="assets/images/img20.jpg" alt="">
-                           </figure>
-                           <div class="testimonial-content">
-                              <p>" Dolorum aenean dolorem minima! Voluptatum? Corporis condimentum ac primis fusce, atque! Vivamus. Non cupiditate natus excepturi, quod quo, aute facere? Deserunt aliquip, egestas ipsum, eu.Dolorum aenean dolorem minima!? Corporis condi mentum acpri! "</p>
-                              <cite>
-                                 Johny English
-                                 <span class="company">Travel Agent</span>
-                              </cite>
-                           </div>
-                        </div>
-                        <div class="testimonial-item text-center">
-                           <figure class="testimonial-img">
-                              <img src="assets/images/img21.jpg" alt="">
-                           </figure>
-                           <div class="testimonial-content">
-                              <p>" Dolorum aenean dolorem minima! Voluptatum? Corporis condimentum ac primis fusce, atque! Vivamus. Non cupiditate natus excepturi, quod quo, aute facere? Deserunt aliquip, egestas ipsum, eu.Dolorum aenean dolorem minima!? Corporis condi mentum acpri! "</p>
-                              <cite>
-                                 William Housten
-                                 <span class="company">Travel Agent</span>
-                              </cite>
-                           </div>
-                        </div>
-                        <div class="testimonial-item text-center">
-                           <figure class="testimonial-img">
-                              <img src="assets/images/img22.jpg" alt="">
-                           </figure>
-                           <div class="testimonial-content">
-                              <p>" Dolorum aenean dolorem minima! Voluptatum? Corporis condimentum ac primis fusce, atque! Vivamus. Non cupiditate natus excepturi, quod quo, aute facere? Deserunt aliquip, egestas ipsum, eu.Dolorum aenean dolorem minima!? Corporis condi mentum acpri! "</p>
-                              <cite>
-                                 Alison Wright
-                                 <span class="company">Travel Guide</span>
-                              </cite>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <!-- testimonial html end -->
-         <!-- Home contact details section html start -->
-         <section class="contact-section">
-            <div class="container">
-               <div class="row">
-                  <div class="col-lg-4">
-                     <div class="contact-img" style="background-image: url(assets/images/img24.jpg);">
-                     </div>
-                  </div>
-                  <div class="col-lg-8">
-                     <div class="contact-details-wrap">
-                        <div class="row">
-                           <div class="col-sm-4">
-                              <div class="contact-details">
-                                 <div class="contact-icon">
-                                    <img src="assets/images/icon12.png" alt="">
-                                 </div>
-                                 <ul>
-                                    <li>
-                                       <a href="#">support@gmail.com</a>
-                                    </li>
-                                    <li>
-                                       <a href="#">info@domain.com</a>
-                                    </li>
-                                    <li>
-                                       <a href="#">name@company.com</a>
-                                    </li>
-                                 </ul>
-                              </div>
-                           </div>
-                           <div class="col-sm-4">
-                              <div class="contact-details">
-                                 <div class="contact-icon">
-                                    <img src="assets/images/icon13.png" alt="">
-                                 </div>
-                                 <ul>
-                                    <li>
-                                       <a href="#">+132 (599) 254 669</a>
-                                    </li>
-                                    <li>
-                                       <a href="#">+123 (669) 255 587</a>
-                                    </li>
-                                    <li>
-                                       <a href="#">+01 (977) 2599 12</a>
-                                    </li>
-                                 </ul>
-                              </div>
-                           </div>
-                           <div class="col-sm-4">
-                              <div class="contact-details">
-                                 <div class="contact-icon">
-                                    <img src="assets/images/icon14.png" alt="">
-                                 </div>
-                                 <ul>
-                                    <li>
-                                       3146 Koontz, California
-                                    </li>
-                                    <li>
-                                       Quze.24 Second floor
-                                    </li>
-                                    <li>
-                                       36 Street, Melbourne
-                                    </li>
-                                 </ul>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="contact-btn-wrap">
-                        <h3>LET'S JOIN US FOR MORE UPDATE !!</h3>
-                        <a href="#" class="button-primary">LEARN MORE</a>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </section>
-         <!--  contact details html end -->
+            </section>
+
+
+       
       </main>
       <footer id="colophon" class="site-footer footer-primary">
-         <div class="top-footer">
+         <!-- <div class="top-footer">
             <div class="container">
                <div class="row">
                   <div class="col-lg-3 col-md-6">
@@ -1639,31 +673,17 @@ import Chartbib from '../components/Chartbib.astro'
                   </div>
                </div>
             </div>
-         </div>
+         </div> -->
          <div class="buttom-footer">
             <div class="container">
-               <div class="row align-items-center">
-                  <div class="col-md-5">
-                     <div class="footer-menu">
-                        <ul>
-                           <li>
-                              <a href="#">Privacy Policy</a>
-                           </li>
-                           <li>
-                              <a href="#">Term & Condition</a>
-                           </li>
-                           <li>
-                              <a href="#">FAQ</a>
-                           </li>
-                        </ul>
-                     </div>
-                  </div>
-                  <div class="col-md-2 text-center">
+               <div class="flex md:flex-row flex-col md:justify-between items-center justify-center">
+                 
+                  <div class="">
                      <div class="footer-logo">
-                        <a href="#"><img src="assets/images/travele-logo.png" alt=""></a>
+                        <a href="#"><img src="/img/logo-white.svg" alt=""></a>
                      </div>
                   </div>
-                  <div class="col-md-5">
+                  <div class="">
                      <div class="copy-right ">Copyright © 2021 Travele. All rights reserveds</div>
                   </div>
                </div>
