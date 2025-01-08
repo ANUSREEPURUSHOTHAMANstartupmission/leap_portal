@@ -6,17 +6,6 @@
     import programs from './data/programs.json';
 </script>
 
-<style is:global>
-  /* Custom styles for the navigation arrows */
-  .swiper-button-next, .swiper-button-prev {
-      color: #ff5722; /* Custom arrow color (e.g., orange) */
-      font-weight: bold; /* Make the arrows bolder */
-      background-color: #e64a19;
-  }
-  .swiper-button-next:hover, .swiper-button-prev:hover {
-      color: #e64a19; /* Darker color on hover */
-  }
-</style>
 
 
 <div class="row">
