@@ -4,6 +4,7 @@
     import 'swiper/css';
     import 'swiper/css/navigation';
     import programs from './data/programs.json';
+    
 </script>
 
 <div class="row">
