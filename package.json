@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "flot": "^4.2.6",
+    "flowbite": "^2.4.1",
     "svelte-swipe": "^2.0.4",
     "swiper": "^8.3.2"
   }

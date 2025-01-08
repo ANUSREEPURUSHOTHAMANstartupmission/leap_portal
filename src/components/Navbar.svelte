@@ -56,7 +56,7 @@
 
 <svelte:window bind:scrollY={y}/>
 
-  <div id="navbar"  class="fixed space-x-4 md:space-x-0 min-h-fit w-screen sm:min-h-0  left-0 top-0
+  <div id="navbar"  class="fixed space-x-4 shadow-md md:space-x-0 min-h-fit w-screen sm:min-h-0  left-0 top-0
  flex sm:items-center
   ease-in-out transition-all transform duration-300
   z-50  py-2
@@ -75,15 +75,18 @@
    <main class=" flex  items-start px-16 my-auto">
       <div style="font-family: Museo-Sans, sans-serif;" class="flex my-auto  {scrolled?'text-black':'text-white'}">
           <a href="/#home"  class="md:flex cursor-pointer hidden px-4 py-3  md:py-1 uppercase   text-sm">Home</a>
+          <a href="/#LEAP_Coworks"  class="md:flex cursor-pointer hidden px-4 py-3  md:py-1 uppercase   text-sm">LEAP Coworks</a>
+          <a href="/#LEAP_Membership"  class="md:flex cursor-pointer hidden px-4 py-3  md:py-1 uppercase   text-sm">LEAP Membership</a>
+          <a href="/#Facility_Booking"  class="md:flex cursor-pointer hidden px-4 py-3  md:py-1 uppercase   text-sm">Facility Booking</a>
          
       </div>
     
-      <div class="flex  items-center justify-center  bg-white my-auto spl_cursor md:hidden flex ">   
+      <div class="flex  items-center justify-center  bg-black my-auto spl_cursor md:hidden flex ">   
            <div on:click="{()=> menu_open = !menu_open }" class="z-50 items-center justify-center my-auto spl_cursor md:pt-4 pt-1  bg-black absolute cursor-pointer top-3 md:right-8 right-4 w-10 h-10 md:text-xl text-xs ml-auto transition duration-150 hover:shadow py-1  -solid -transparent rounded bg-transparent block outline-none focus:outline-none" type="button">
-              <div class="block absolute w-6 h-0.5 rounded-sm bg-white top-5  duration-500 { menu_open ? 'opacity-0':'' }" ></div>
-              <div class="block absolute w-6 h-0.5 rounded-sm bg-white top-6 duration-500 { menu_open ? 'transform rotate-45':'' }"></div>
-              <div class="block absolute w-6 h-0.5 rounded-sm bg-white top-7 duration-500 { menu_open ? 'transform -rotate-45':'' }"></div>
-              <div class="block absolute w-6 h-0.5 rounded-sm bg-white top-8 duration-500 { menu_open ? 'opacity-0':'' }" ></div>
+              <div class="block absolute w-6 h-0.5 rounded-sm {scrolled?'bg-black':'bg-white'} top-5  duration-500 { menu_open ? 'opacity-0':'' }" ></div>
+              <div class="block absolute w-6 h-0.5 rounded-sm {scrolled?'bg-black':'bg-white'} top-6 duration-500 { menu_open ? 'transform rotate-45':'' }"></div>
+              <div class="block absolute w-6 h-0.5 rounded-sm {scrolled?'bg-black':'bg-white'} top-7 duration-500 { menu_open ? 'transform -rotate-45':'' }"></div>
+              <div class="block absolute w-6 h-0.5 rounded-sm {scrolled?'bg-black':'bg-white'} top-8 duration-500 { menu_open ? 'opacity-0':'' }" ></div>
           </div>
       </div>
   </main>
@@ -115,6 +118,15 @@
           <ul class=" md:text-sm gap-2 font-data">
                   <li on:click="{()=> menu_open = !menu_open }" class="px-5 py-2 transform hover:bg-gray-400 transition duration-500 hover:scale-100 md:hidden flex">
                       <a href="/#home"  class="cursor-pointer text-white font-bold hover:text-black uppercase ">Home</a>
+                  </li>
+                  <li on:click="{()=> menu_open = !menu_open }" class="px-5 py-2 transform hover:bg-gray-400 transition duration-500 hover:scale-100 md:hidden flex">
+                    <a href="/#LEAP_Coworks"  class="cursor-pointer text-white font-bold hover:text-black uppercase ">LEAP Coworks</a>
+                  </li>
+                  <li on:click="{()=> menu_open = !menu_open }" class="px-5 py-2 transform hover:bg-gray-400 transition duration-500 hover:scale-100 md:hidden flex">
+                    <a href="/#LEAP_Membership"  class="cursor-pointer text-white font-bold hover:text-black uppercase ">LEAP Membership</a>
+                  </li>
+                  <li on:click="{()=> menu_open = !menu_open }" class="px-5 py-2 transform hover:bg-gray-400 transition duration-500 hover:scale-100 md:hidden flex">
+                    <a href="/#Facility_Booking"  class="cursor-pointer text-white font-bold hover:text-black uppercase ">Facility Booking</a>
                   </li>
 
                   

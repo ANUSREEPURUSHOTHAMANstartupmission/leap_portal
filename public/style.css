@@ -4079,9 +4079,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
 /*--------------------------------------------------------------
 >>> Home travel blog section  
 ----------------------------------------------------------------*/
-.blog-section {
-  padding: 100px 0;
-}
+
 .blog-section .post {
   box-shadow: 0px 0px 13px -4px rgba(0, 0, 0, 0.2);
 }
@@ -4211,8 +4209,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  margin-top: -136px;
-  min-height: 385px;
+  margin-top: -90px;
 }
 .contact-section .contact-details-wrap {
   padding-left: 20px;
@@ -4799,7 +4796,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
   flex-wrap: wrap;
 }
 .home-about-section .about-img-left .about-img {
-  margin-top: -90px;
+  margin-top: -69px;
 }
 .home-about-section .about-img-right .about-img {
   border: 10px solid #ffffff;

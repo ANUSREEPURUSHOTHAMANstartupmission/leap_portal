@@ -5,6 +5,8 @@ import Speakers from '../components/Speakers.svelte';
 import Chartbib from '../components/Chartbib.astro'
 import Selection from '../components/Selection.astro'
 import Leapcentres from '../components/Leapcentres.svelte'
+import Leap from '../components/Leap.svelte'
+
 
 ---
 <Layout>
@@ -18,7 +20,7 @@ import Leapcentres from '../components/Leapcentres.svelte'
    
       <main id="content" class="site-main">
          <!-- Home slider html start -->
-         <section class="home-slider-section">
+         <section class="home-slider-section" id="home">
             <div class="home-slider">
                <div class="home-banner-items">
                   <div class="banner-inner-wrap bg-cover bg-center" style="background-image: url(/img/bg1.png);"></div>
@@ -55,7 +57,7 @@ import Leapcentres from '../components/Leapcentres.svelte'
          </div>
       
 
-         <section class="package-section py-24">
+         <section class="package-section py-24" id="LEAP_Coworks">
             <div class="container">
                <div class="section-heading">
                   <div class="row align-items-end">
@@ -104,9 +106,7 @@ import Leapcentres from '../components/Leapcentres.svelte'
                                                 </li>
                                              </ul>
                                           </div>
-                                          <div class="btn-wrap">
-                                             <a href="https://startups.startupmission.in/application/incubation" target="_blank" class="button-primary uppercase">Apply Now</a>
-                                          </div>
+                                         
                                        </div>
                                     </div>
                                     <div class="tab-pane" id="experience" role="tabpanel" aria-labelledby="experience-tab">
@@ -171,9 +171,7 @@ import Leapcentres from '../components/Leapcentres.svelte'
                                                       </ul>
                                                    </div>
                                                 </div>
-                                                <div class="btn-wrap">
-                                                   <a href="https://startups.startupmission.in/application/incubation" target="_blank" class="button-primary uppercase">Apply Now</a>
-                                                </div>
+                                               
                                              </div>
                                        </div>
                                     </div>
@@ -187,9 +185,22 @@ import Leapcentres from '../components/Leapcentres.svelte'
                            <h5 class="dash-style uppercase">Selection process</h5>
                         </div>
                         <Selection></Selection>
+                       
                      </div>
+
                   </div>
                  
+               </div>
+            </div>
+           
+         </section>
+
+         <section class='w-full'>
+            <div class="container w-full">
+               <div class="w-full">
+                  <div class="btn-wrap items-end justify-end text-end flex w-full">
+                     <a href="https://startups.startupmission.in/application/incubation" target="_blank" class="button-primary uppercase">Apply Now</a>
+                  </div>
                </div>
             </div>
          </section>
@@ -197,8 +208,8 @@ import Leapcentres from '../components/Leapcentres.svelte'
 
 
 
+         <div class="single-tour-section pt-32 pb-2" id="LEAP_Membership">
 
-         <div class="single-tour-section pt-32 pb-2">
             <div class="container">
                <div class="row">
                   <div class="col-lg-8">
@@ -259,9 +270,9 @@ import Leapcentres from '../components/Leapcentres.svelte'
                                           Access to Startup Infinity Centers across the world
                                        </li>
                                     </ul>
-                                    <div class="btn-wrap">
+                                    <!-- <div class="btn-wrap items-end justify-end text-end flex">
                                        <a href="https://leap-portal.startupmission.in/login" target="_blank" class="button-primary">Apply Now</a>
-                                    </div>
+                                    </div> -->
                                  </div>
                               </div>
                               <!-- <div class="tab-pane" id="review" role="tabpanel" aria-labelledby="review-tab">
@@ -463,92 +474,297 @@ import Leapcentres from '../components/Leapcentres.svelte'
                </div>
             </div>
          </div>
-         <div class="package-section pt-2 ">
-            <div class="container">
-               <div class="package-inner">
-                  <div class="row">
-                     <div class="col-lg-6 col-md-6">
-                        <div class="package-wrap">
-                           <figure class="feature-image">
-                              <a href="#">
-                                 <img src="/img/platinumcard.jpeg" alt="">
-                              </a>
-                           </figure>
-                           <div class="package-price">
-                              <h6>
-                                 <span>
-                                    4999 pack (Platinum)
-                                 </span>
-                              </h6>
+
+
+
+         <section class=" pt-10">
+            <div class="career-detail-section">
+               <div class="career-detail-inner">
+                  <div class="container">
+                     <div class="row">
+                        <div class="col-lg-8">
+                           <div class="job-description p-2 text-white text-lg font-bold">
+                              LEAP membership details (Platinum & Gold membership)
                            </div>
-                           <div class="package-content-wrap pb-2">
-                              <div class="package-meta text-center">
-                                 <div class="text-white text-lg">
-                                    Access to leap centers across the country - Owned by KSUM
+                        </div>
+                        <div class="col-lg-12">
+                           <div class="tab-container">
+                              <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                 <li class="nav-item">
+                                    <a class="nav-link active" id="leadpcard1" data-toggle="tab" href="#leadpcard" role="tab" aria-controls="leadpcard" aria-selected="true">
+                                      
+                                       Platinum Membership (₹4999)
+                                    </a>
+                                 </li>
+                               
+                                 <li class="nav-item">
+                                    <a class="nav-link" id="requirement-tab" data-toggle="tab" href="#requirement" role="tab" aria-controls="requirement" aria-selected="false">Gold Membership (₹1999)</a>
+                                 </li>
+                              </ul>
+                              
+                              <div class="tab-content" id="myTabContent">
+                                 <div class="tab-pane fade show active" id="leadpcard" role="tabpanel" aria-labelledby="leadpcard1">
+                                    <div class="overview-content flex md:flex-row flex-col ">
+                                       <div class="md:w-2/5 w-full flex-1 ">
+                                          <img src="/img/platinumcard.jpeg" class="" alt="">
+                                       </div>
+                                       <div class="contact-details-wrap pt-2 pl-4 md:w-3/5 w-full">
+                                          <div class="row">
+                                             <div class="">
+                                                <div class="flex">
+                                                   <div class="travel-package-content" style="padding: 10px; text-align: left;">
+                                                      <i class="far fa-arrow-alt-circle-right"></i>
+                                                   </div>
+                                                   <div style="flex: 2; padding: 10px; text-align: left;">
+                                                      Flexi Seats Booking allows up to 5 bookings per month for 1 seat.
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="row">
+                                             <div class="">
+                                                <div class="flex">
+                                                   <div class="travel-package-content" style="padding: 10px; text-align: left;">
+                                                      <i class="far fa-arrow-alt-circle-right"></i>
+                                                   </div>
+                                                   <div style="flex: 2; padding: 10px; text-align: left;">
+                                                      Enjoy a 40% subsidy on up to 2 additional Flexi Seat bookings at ₹240 per seat per day.
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="row">
+                                             <div class="">
+                                                <div class="flex">
+                                                   <div class="travel-package-content" style="padding: 10px; text-align: left;">
+                                                      <i class="far fa-arrow-alt-circle-right"></i>
+                                                   </div>
+                                                   <div style="flex: 2; padding: 10px; text-align: left;">
+                                                      Additional Flexi Seat bookings are charged at ₹400 per seat per day after the free slots.
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="row">
+                                             <div class="">
+                                                <div class="flex">
+                                                   <div class="travel-package-content" style="padding: 10px; text-align: left;">
+                                                      <i class="far fa-arrow-alt-circle-right"></i>
+                                                   </div>
+                                                   <div style="flex: 2; padding: 10px; text-align: left;">
+                                                      Meeting Room usage is free twice per month, with a 50% subsidy on additional bookings.
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="row">
+                                             <div class="">
+                                                <div class="flex">
+                                                   <div class="travel-package-content" style="padding: 10px; text-align: left;">
+                                                      <i class="far fa-arrow-alt-circle-right"></i>
+                                                   </div>
+                                                   <div style="flex: 2; padding: 10px; text-align: left;">
+                                                      Access to leap centers across the country - Owned by KSUM
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="row">
+                                             <div class="">
+                                                <div class="flex">
+                                                   <div class="travel-package-content" style="padding: 10px; text-align: left;">
+                                                      <i class="far fa-arrow-alt-circle-right"></i>
+                                                   </div>
+                                                   <div style="flex: 2; padding: 10px; text-align: left;">
+                                                      The validity period is set for 12 months from activation.
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="btn-wrap items-end justify-end text-end flex">
+                                             <a href="https://leap-portal.startupmission.in/login" target="_blank" class="button-primary">Apply Now</a>
+                                          </div>
+                                       </div>
+                                    </div>
                                  </div>
-                              </div>
-                              <div class="package-content pb-6">
-                                 <div style="max-width: 600px; margin: 20px auto;  #ddd; border-radius: 8px; overflow: hidden;" class="mb-">
-                                    <div style="display: flex; border-bottom: 1px solid #ddd;">
-                                      <div style="flex: 1; padding: 10px; text-align: left;">Flexi Seats Booking</div>
-                                      <div style="flex: 2; padding: 10px; text-align: left;">2 times free in a month. After that, Rs. 400 per seat per day.</div>
+                                 
+                                 <div class="tab-pane" id="requirement" role="tabpanel" aria-labelledby="requirement-tab">
+                                    <div class="overview-content flex md:flex-row flex-col ">
+                                       <div class="md:w-2/5 w-full flex-1 ">
+                                          <img src="/img/leap/goldcard.jpeg" class="" alt="">
+                                       </div>
+                                       <div class="contact-details-wrap pt-2 pl-4 md:w-3/5 w-full">
+                                          <div class="row">
+                                             <div class="">
+                                                <div class="flex">
+                                                   <div class="travel-package-content" style="padding: 10px; text-align: left;">
+                                                      <i class="far fa-arrow-alt-circle-right"></i>
+                                                   </div>
+                                                   <div style="flex: 2; padding: 10px; text-align: left;">
+                                                      Flexi Seats Booking allows up to 2 bookings per month for 1 seat.
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="row">
+                                             <div class="">
+                                                <div class="flex">
+                                                   <div class="travel-package-content" style="padding: 10px; text-align: left;">
+                                                      <i class="far fa-arrow-alt-circle-right"></i>
+                                                   </div>
+                                                   <div style="flex: 2; padding: 10px; text-align: left;">
+                                                      Enjoy a 40% subsidy on up to 2 additional Flexi Seat bookings at ₹240 per seat per day.
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="row">
+                                             <div class="">
+                                                <div class="flex">
+                                                   <div class="travel-package-content" style="padding: 10px; text-align: left;">
+                                                      <i class="far fa-arrow-alt-circle-right"></i>
+                                                   </div>
+                                                   <div style="flex: 2; padding: 10px; text-align: left;">
+                                                      Additional Flexi Seat bookings are charged at ₹400 per seat per day after the free slots.
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="row">
+                                             <div class="">
+                                                <div class="flex">
+                                                   <div class="travel-package-content" style="padding: 10px; text-align: left;">
+                                                      <i class="far fa-arrow-alt-circle-right"></i>
+                                                   </div>
+                                                   <div style="flex: 2; padding: 10px; text-align: left;">
+                                                      Meeting Room usage is free once per month, with a 25% subsidy on subsequent bookings.
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="row">
+                                             <div class="">
+                                                <div class="flex">
+                                                   <div class="travel-package-content" style="padding: 10px; text-align: left;">
+                                                      <i class="far fa-arrow-alt-circle-right"></i>
+                                                   </div>
+                                                   <div style="flex: 2; padding: 10px; text-align: left;">
+                                                      Access to leap centers across the country - Owned by KSUM
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="row">
+                                             <div class="">
+                                                <div class="flex">
+                                                   <div class="travel-package-content" style="padding: 10px; text-align: left;">
+                                                      <i class="far fa-arrow-alt-circle-right"></i>
+                                                   </div>
+                                                   <div style="flex: 2; padding: 10px; text-align: left;">
+                                                      The validity period is set for 12 months from activation.
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="btn-wrap items-end justify-end text-end flex">
+                                             <a href="https://leap-portal.startupmission.in/login" target="_blank" class="button-primary">Apply Now</a>
+                                          </div>
+                                       </div>
                                     </div>
-                                    <div style="display: flex; border-bottom: 1px solid #ddd;">
-                                      <div style="flex: 1; padding: 10px; text-align: left;">Flexi Seats Additional Seat Booking</div>
-                                      <div style="flex: 2; padding: 10px; text-align: left;">Up to 2 additional seats get a 40% subsidy, priced at Rs. 240 per seat per day.</div>
-                                    </div>
-                                    <div style="display: flex; border-bottom: 1px solid #ddd;">
-                                      <div style="flex: 1; padding: 10px; text-align: left;">Meeting Room</div>
-                                      <div style="flex: 2; padding: 10px; text-align: left;">1 time free in a month. After that, a 25% subsidy on additional bookings applies.</div>
-                                    </div>
-                                    <div style="display: flex; border-bottom: 1px solid #ddd;">
-                                       <div style="flex: 1; padding: 10px; text-align: left;">Validity</div>
-                                       <div style="flex: 2; padding: 10px; text-align: left;">12 Months</div>
-                                     </div>
+                                 </div>
                                  </div>
                               </div>
                            </div>
                         </div>
+                      
                      </div>
-                     <div class="col-lg-6 col-md-6">
-                        <div class="package-wrap">
-                           <figure class="feature-image">
-                              <a href="#">
-                                 <img src="/img/platinumcard.jpeg" alt="">
-                              </a>
-                           </figure>
-                           <div class="package-price">
-                              <h6>
-                                 <span>
-                                    4999 pack (Platinum)
-                                 </span>
-                              </h6>
-                           </div>
-                           <div class="package-content-wrap pb-2">
-                              <div class="package-meta text-center">
-                                 <div class="text-white text-lg">
-                                    Access to leap centers across the country - Owned by KSUM
-                                 </div>
+                  </div>
+               </div>
+              
+            </div>
+         </section>
+
+
+
+            <div class="contact-page-section pt-16" id="Facility_Booking">
+               <div class="contact-form-inner">
+                  <div class="container">
+                     <div class="row">
+                        <div class="col-md-6">
+                           <div class="contact-from-wrap">
+                              <div class="section-heading">
+                                 <h5 class="dash-style">Book Premium Facilities with LEAP Co Works</h5>
+                                 <h2>Facility Booking</h2>
+                                 <p class="pt-3">
+                                    LEAP Co Works provides common facilities like meeting rooms, conference halls, amphi theatre, event hall etc for the startups and associated communities.
+                                 </p>
                               </div>
-                              <div class="package-content pb-6">
-                                 <div style="max-width: 600px; margin: 20px auto; #ddd; border-radius: 8px; overflow: hidden;" class="mb-">
-                                    <div style="display: flex; border-bottom: 1px solid #ddd;">
-                                      <div style="flex: 1; padding: 10px; text-align: left;">Flexi Seats Booking</div>
-                                      <div style="flex: 2; padding: 10px; text-align: left;">2 times free in a month. After that, Rs. 400 per seat per day.</div>
+                              <section class="home-about-section mt-28">
+                                 <div class="container">
+                                    <div class="row">
+                                       <div class="">
+                                          <div class="about-img-wrap">
+                                             <div class="about-img-left">
+                                                <div class="about-img">
+                                                   <img src="/img/leap/img1.png" alt="">
+                                                </div>
+                                             </div>
+                                             <div class="about-img-right">
+                                                <div class="about-img">
+                                                   <img src="/img/leap/img2.png" alt="">
+                                                </div>
+                                                <!-- <div class="about-img">
+                                                   <img src="assets/images/img34.jpg" alt="">
+                                                </div> -->
+                                             </div>
+                                          </div>
+                                       </div>
                                     </div>
-                                    <div style="display: flex; border-bottom: 1px solid #ddd;">
-                                      <div style="flex: 1; padding: 10px; text-align: left;">Flexi Seats Additional Seat Booking</div>
-                                      <div style="flex: 2; padding: 10px; text-align: left;">Up to 2 additional seats get a 40% subsidy, priced at Rs. 240 per seat per day.</div>
-                                    </div>
-                                    <div style="display: flex; border-bottom: 1px solid #ddd;">
-                                      <div style="flex: 1; padding: 10px; text-align: left;">Meeting Room</div>
-                                      <div style="flex: 2; padding: 10px; text-align: left;">1 time free in a month. After that, a 25% subsidy on additional bookings applies.</div>
-                                    </div>
-                                    <div style="display: flex; border-bottom: 1px solid #ddd;">
-                                       <div style="flex: 1; padding: 10px; text-align: left;">Validity</div>
-                                       <div style="flex: 2; padding: 10px; text-align: left;">12 Months</div>
-                                     </div>
                                  </div>
+                              </section>
+                             
+                             
+                           </div>
+                        </div>
+                        <div class="col-md-6">
+                           <div class="contact-detail-wrap">
+                              <p>
+                                 LEAP Co Works offers meeting rooms, conference halls, amphitheaters, and event halls for startups and communities. Facilities are available to incubated startups, DIPP-approved startups, associated communities, and industrial bodies. Bookings require admin approval, with advance payment. Subsidies include 50% for incubated startups and 40% for others.
+                              </p>
+                              <div class="details-list">
+                                 <ul>
+                                    <li>
+                                       <span class="icon">
+                                          <i class="fas fa-phone-volume"></i>
+                                       </span>
+                                       <div class="details-content">
+                                          <h4>Trivadrum</h4>
+                                          <span>Manu S - 0471-2700270</span>
+                                       </div>
+                                    </li>
+                                    <li>
+                                       <span class="icon">
+                                          <i class="fas fa-phone-volume"></i>
+                                       </span>
+                                       <div class="details-content">
+                                          <h4>Kochi
+                                          </h4>
+                                          <span>Shajahan - 0484-2977137</span>
+                                       </div>
+                                    </li>
+                                    <li>
+                                       <span class="icon">
+                                          <i class="fas fa-phone-volume"></i>
+                                       </span>
+                                       <div class="details-content">
+                                          <h4>Kozhikode</h4>
+                                          <span>Ramees - 9633033339</span>
+                                       </div>
+                                    </li>
+                                 </ul>
+                              </div>
+                              <div class="btn-wrap items-end justify-end text-end flex">
+                                 <a href="https://facility.startupmission.in/" target="_blank" class="button-primary mt-0 uppercase">Book Now</a>
                               </div>
                            </div>
                         </div>
@@ -556,124 +772,34 @@ import Leapcentres from '../components/Leapcentres.svelte'
                   </div>
                </div>
             </div>
-            <div class="btn-wrap container">
-               <a href="https://leap-portal.startupmission.in/login" target="_blank" class="button-primary">Apply Now</a>
-            </div>
-         </div>
 
-     
 
-         <section class="blog-section">
+         
+         <section class="blog-section pt-10 pb-24">
             <div class="container">
                <div class="section-heading text-center">
                   <div class="row">
                      <div class="col-lg-8 offset-lg-2">
-                        <!-- <h5 class="dash-style">FROM OUR BLOG</h5> -->
-                        <h4 class=" md:text-3xl text-xl font-bold uppercase">LEAP Centres</h4>
-                        <!-- <p>Mollit voluptatem perspiciatis convallis elementum corporis quo veritatis aliquid blandit, blandit torquent, odit placeat. Adipiscing repudiandae eius cursus? Nostrum magnis maxime curae placeat.</p> -->
+                        <h5>Your Hub for Innovation and Growth</h5>
+                        <h2>LEAP Centre</h2>
                      </div>
                   </div>
                </div>
-
+               <div class="md:px-0 px-10">
                   <Leapcentres client:load></Leapcentres>
+
                </div>
-            </section>
+               <div class="item-center flex  justify-center text-center">
+                  <div class="title-icon-divider"></div>
+               </div>
+            </div>
+         </section>
 
-
+         
        
       </main>
       <footer id="colophon" class="site-footer footer-primary">
-         <!-- <div class="top-footer">
-            <div class="container">
-               <div class="row">
-                  <div class="col-lg-3 col-md-6">
-                     <aside class="widget widget_text">
-                        <h3 class="widget-title">
-                           About Travel
-                        </h3>
-                        <div class="textwidget widget-text">
-                           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
-                        </div>
-                        <div class="award-img">
-                           <a href="#"><img src="assets/images/logo6.png" alt=""></a>
-                           <a href="#"><img src="assets/images/logo2.png" alt=""></a>
-                        </div>
-                     </aside>
-                  </div>
-                  <div class="col-lg-3 col-md-6">
-                     <aside class="widget widget_text">
-                        <h3 class="widget-title">CONTACT INFORMATION</h3>
-                        <div class="textwidget widget-text">
-                           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                           <ul>
-                              <li>
-                                 <a href="#">
-                                    <i class="fas fa-phone-alt"></i>
-                                    +01 (977) 2599 12
-                                 </a>
-                              </li>
-                              <li>
-                                 <a href="#">
-                                    <i class="fas fa-envelope"></i>
-                                    company@domain.com
-                                 </a>
-                              </li>
-                              <li>
-                                 <i class="fas fa-map-marker-alt"></i>
-                                 3146  Koontz, California
-                              </li>
-                           </ul>
-                        </div>
-                     </aside>
-                  </div>
-                  <div class="col-lg-3 col-md-6">
-                     <aside class="widget widget_recent_post">
-                        <h3 class="widget-title">Latest Post</h3>
-                        <ul>
-                           <li>
-                              <h5>
-                                 <a href="#">Life is a beautiful journey not a destination</a>
-                              </h5>
-                              <div class="entry-meta">
-                                 <span class="post-on">
-                                    <a href="#">August 17, 2021</a>
-                                 </span>
-                                 <span class="comments-link">
-                                    <a href="#">No Comments</a>
-                                 </span>
-                              </div>
-                           </li>
-                           <li>
-                              <h5>
-                                 <a href="#">Take only memories, leave only footprints</a>
-                              </h5>
-                              <div class="entry-meta">
-                                 <span class="post-on">
-                                    <a href="#">August 17, 2021</a>
-                                 </span>
-                                 <span class="comments-link">
-                                    <a href="#">No Comments</a>
-                                 </span>
-                              </div>
-                           </li>
-                        </ul>
-                     </aside>
-                  </div>
-                  <div class="col-lg-3 col-md-6">
-                     <aside class="widget widget_newslatter">
-                        <h3 class="widget-title">SUBSCRIBE US</h3>
-                        <div class="widget-text">
-                           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        </div>
-                        <form class="newslatter-form">
-                           <input type="email" name="s" placeholder="Your Email..">
-                           <input type="submit" name="s" value="SUBSCRIBE NOW">
-                        </form>
-                     </aside>
-                  </div>
-               </div>
-            </div>
-         </div> -->
+        
          <div class="buttom-footer">
             <div class="container">
                <div class="flex md:flex-row flex-col md:justify-between items-center justify-center">
@@ -684,7 +810,7 @@ import Leapcentres from '../components/Leapcentres.svelte'
                      </div>
                   </div>
                   <div class="">
-                     <div class="copy-right ">Copyright © 2021 Travele. All rights reserveds</div>
+                     <div class="copy-right ">Copyright © 2025 KSUM. All rights reserveds</div>
                   </div>
                </div>
             </div>

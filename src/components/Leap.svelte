@@ -1,5 +1,9 @@
-[
-    
+<script>
+    import { onMount, onDestroy } from "svelte";
+    let currentIndex = 0;
+    let locations =
+    [
+
     {
         "title": "Kerala Startup Mission- Kozhikode",
         "address":"Govt.Cyberpark, Nellikode P.O, Kozhikode",
@@ -81,5 +85,35 @@
         "phone":"tvm",
         "image": "1.png"
     }
+    
+ ];
+ 
 
-]
+  </script>
+ 
+ 
+ <div id="default-carousel" class=" relative w-full" data-carousel="slide">
+    <!-- Carousel wrapper -->
+    <div class="relative gap-4 h-[450px] overflow-hidden rounded-lg">
+         <!-- Item 1 -->
+         <a href="" target="_blank" class="z-40">
+            <h1 class=" text-white p-4 font-semibold ">Find Perfect Stays and Unmissable Sights Close to the Venue!</h1>
+        </a>
+         {#each locations as location, index}
+            <div class="hidden duration-700 px-4 ease-in-out md:w-1/2 h-[400px]" data-carousel-item>
+                <img src="img/leap/{location.image}"  class=" rounded-3xl absolute object-cover p-4 flex h-[300px] w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                <div class=" absolute  -bottom-10 left-0  bg-opacity-80 p-4 pb-0 w-full">
+                    <h2 class="text-lg text-white font-semibold pt-1">{location.title}</h2>
+                    
+                    <a href="" target="_blank" class="text-white text-sm hover:underline">View More</a>
+                </div>
+            </div>
+        {/each}
+    </div>
+  </div>
+ 
+ 
+ 
+ 
+ 
+ 
