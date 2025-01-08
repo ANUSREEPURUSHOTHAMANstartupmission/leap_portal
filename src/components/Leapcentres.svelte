@@ -6,11 +6,9 @@
     import programs from './data/programs.json';
 </script>
 
-
-
 <div class="row">
     <Swiper
-        modules="{[Autoplay, Navigation]}"
+        modules={[Autoplay, Navigation]}
         spaceBetween={50}
         slidesPerView={1}
         centeredSlides={true}
@@ -22,12 +20,12 @@
         }}
         breakpoints={{
             "768": {
-              slidesPerView: 3,
-              spaceBetween: 20,
+                slidesPerView: 3,
+                spaceBetween: 20,
             },
             "1300": {
-              slidesPerView: 3,
-              spaceBetween: 20,
+                slidesPerView: 3,
+                spaceBetween: 20,
             },
         }}
     >
@@ -36,7 +34,7 @@
                 <div class="h-full flex flex-col">
                     <article class="post h-full flex flex-col">
                         <figure class="feature-image">
-                            <img src="img/leap/{program.image}" alt="" class=" h-48 object-cover w-full">
+                            <img src="img/leap/{program.image}" alt="" class="h-48 object-cover w-full">
                         </figure>
                         <div class="entry-content flex-1 flex flex-col justify-between">
                             <h3 class="text-lg font-bold">{program.title}</h3>
@@ -58,5 +56,4 @@
             </SwiperSlide>
         {/each}
     </Swiper>
-  </div>
-  
+</div>
