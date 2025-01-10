@@ -1,11 +1,14 @@
+
 <script>
     import { Swiper, SwiperSlide } from 'swiper/svelte';
-    import { Autoplay, Navigation } from 'swiper';
+    import {Autoplay, Navigation} from 'swiper';
     import 'swiper/css';
-    import 'swiper/css/navigation';
+    import "swiper/css/navigation";
     import programs from './data/programs.json';
     
-</script>
+  </script>
+  
+
 
 <div class="row">
     <Swiper

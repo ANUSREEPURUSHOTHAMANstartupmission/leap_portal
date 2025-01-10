@@ -1,85 +1,66 @@
 [
-    
     {
         "title": "Kerala Startup Mission- Kozhikode",
-        "address":"Govt.Cyberpark, Nellikode P.O, Kozhikode",
-        "poc":"Kavya K S",
-        "email":"kavya@startupmission.in",
-        "phone":"+919072702096",
+        "address": "Govt.Cyberpark, Nellikode P.O, Kozhikode",
+        "poc": "Kavya K S",
+        "email": "kavya@startupmission.in",
+        "phone": "+919072702096",
         "image": "1.png"
     },
     {
         "title": "Kerala Startup Mission- Kozhikode",
-        "address":"2nd Floor, UL CyberPark Rd, Nellikkode, Kozhikode",
-        "poc":"Kavya K S",
-        "email":"kavya@startupmission.in",
-        "phone":"+919072702096",
+        "address": "2nd Floor, UL CyberPark Rd, Nellikkode, Kozhikode",
+        "poc": "Kavya K S",
+        "email": "kavya@startupmission.in",
+        "phone": "+919072702096",
         "image": "2.png"
     },
-
     {
         "title": "Kerala Startup Mission- Kochi",
-        "address":"Kerala Technology Innovation Zone, Kinfra Hi-Tech Park, HMT Colony, P.O, Kalamassery, Kochi",
-        "poc":"Rahul Shah",
-        "email":"s.rahul@startupmission.in",
-        "phone":"7403180193",
+        "address": "Kerala Technology Innovation Zone, Kinfra Hi-Tech Park, HMT Colony, P.O, Kalamassery, Kochi",
+        "poc": "Rahul Shah",
+        "email": "s.rahul@startupmission.in",
+        "phone": "7403180193",
         "image": "3.png"
-    }, 
+    },
     {
         "title": "Kerala Startup Mission- Trivandum",
-        "address":"G3B, Thejaswini, Technopark Campus, Kariyavattom, Trivandrum",
-        "poc":"Krishnakumar M",
-        "email":"krishnakumar@startupmission.in",
-        "phone":"9961822685",
+        "address": "G3B, Thejaswini, Technopark Campus, Kariyavattom, Trivandrum",
+        "poc": "Krishnakumar M",
+        "email": "krishnakumar@startupmission.in",
+        "phone": "9961822685",
         "image": "4.png"
     },
     {
-        "title": "Startup Dreams - Trivandum",
-        "address":"1st floor, Ambedkar Bhavan, Mannanthala, Trivandrum",
-       "poc":"Krishnakumar M",
-        "email":"krishnakumar@startupmission.in",
-        "phone":"9961822685",
+        "title": "Startup Dreams - Trivandrum",
+        "address": "1st floor, Ambedkar Bhavan, Mannanthala, Trivandrum",
+        "poc": "Krishnakumar M",
+        "email": "krishnakumar@startupmission.in",
+        "phone": "9961822685",
         "image": "5.png"
     },
     {
         "title": "Kerala Startup Mission- Kasargod",
-        "address":"ASAP Community Skill park, Kasaragod",
-        "poc":"Kavya K S",
-        "email":"kavya@startupmission.in",
-        "phone":"+919072702096",
+        "address": "ASAP Community Skill park, Kasaragod",
+        "poc": "Kavya K S",
+        "email": "kavya@startupmission.in",
+        "phone": "+919072702096",
         "image": "7.png"
     },
     {
-        "title": "Kerala Startup Mission- Palakkad ",
-        "address":"GPTC Palakkad",
-       "poc":"Rahul Shah",
-        "email":"s.rahul@startupmission.in",
-        "phone":"7403180193",
+        "title": "Kerala Startup Mission- Palakkad",
+        "address": "GPTC Palakkad",
+        "poc": "Rahul Shah",
+        "email": "s.rahul@startupmission.in",
+        "phone": "7403180193",
         "image": "6.png"
     },
     {
         "title": "Kerala Startup Mission- Kollam",
-        "address":"ASAP Community Skill park, Kulakada, Kollam",
-        "poc":"Krishnakumar M",
-        "email":"krishnakumar@startupmission.in",
-        "phone":"9961822685",
+        "address": "ASAP Community Skill park, Kulakada, Kollam",
+        "poc": "Krishnakumar M",
+        "email": "krishnakumar@startupmission.in",
+        "phone": "9961822685",
         "image": "8.png"
-    },
-    {
-        "title": "",
-        "address":"",
-        "poc":"",
-        "email":"",
-        "phone":"tvm",
-        "image": "1.png"
-    },
-    {
-        "title": "",
-        "address":"",
-        "poc":"",
-        "email":"",
-        "phone":"tvm",
-        "image": "1.png"
     }
-
 ]
